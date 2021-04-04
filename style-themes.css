@@ -16,8 +16,8 @@
   font-family: "Verdana", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #dddddd;
-  background-color: #222222;
+  color: #333333;
+  background-color: #eae9f2;
 }
 
 .section-title {
@@ -40,7 +40,6 @@ a:focus {
 
 .page-header {
   margin-bottom: 40px;
-  color: #333333;
   background-color: #ffffff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -54,10 +53,18 @@ a:focus {
   background-size: 290px 212px;
 }
 
+.page-headerr .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("img/enot.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 290px 212px;
+}
+
 .page-header a {
   font-size: 16px;
   line-height: 24px;
-  background-image: -webkit-linear-gradient();
 }
 
 .page-title {
@@ -69,6 +76,34 @@ a:focus {
   line-height: 48px;
 }
 
+.theme-button {
+  position: relative;
+  margin-top: 20px;
+  padding-top: 7px;
+  padding-right: 16px;
+  padding-bottom: 7px;
+  padding-left: 16px;
+  font-size: 12px;
+  border-radius: 2px;
+  background-color: #17161a;
+  cursor: pointer;
+  color: #aaaaaa;
+  border: 1px solid #3344aa;
+}
+
+.theme-button:active {
+  opacity: 0.8;
+}
+
+.theme-button:focus,
+.theme-button:hover {
+  color: #ffffff;
+  background-color: #333333;
+}
+.theme-button:focus {
+  outline-color: #b6aaff;
+}
+
 .about {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +113,7 @@ a:focus {
 
 .about-image {
    width: 147px;
-   height: 147px;
+   height: 157px;
    border-radius: 50%;
  }
 
@@ -108,7 +143,6 @@ a:focus {
   font-size: 16px;
   line-height: 24px;
   font-style: italic;
-  color: #333333;
   background-color: #ffffff;
 }
 
@@ -159,4 +193,39 @@ p.contacts-name {
 .page-footer p {
   margin: 0;
   padding: 0;
+}
+
+/* Тёмная тема */
+.dark-theme {
+  color: #f2f2f2;
+  background-color: #17161a;
+}
+
+.dark-theme .page-header {
+  background-color: #3f3c53;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.dark-theme a {
+  color: #9484f2;
+}
+
+.dark-theme .theme-button {
+  color: #9484f2;
+  border: 1px solid #9484f2;
+}
+
+.dark-theme .theme-button:focus,
+.dark-theme .theme-button:hover {
+  color: #17161a;
+  background-color: #9484f2;
+}
+
+.dark-theme .status p {
+  background-color: #2a2930;
+}
+
+.dark-theme .page-footer {
+  background-color: #373540;
+  color: #f2f2f2;
 }
